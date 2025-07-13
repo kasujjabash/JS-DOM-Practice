@@ -4,6 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Level 2</title>
+
+    <style>
+        #carouselContainer{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 20px;
+        }
+    </style>
+   
 </head>
 <body>
 
@@ -64,15 +74,37 @@
 
     <!-- ! Image carousal -->
     <div class="container" id="carouselContainer">
-        <h3>Image Carousel</h3>
-        <div id="carousel" style="width: 300px; height: 200px; overflow: hidden; position: relative;">
-            <img id="carouselImage" src="https://pbs.twimg.com/profile_images/1784929036583530496/EyncUSdh_400x400.jpg" alt="Carousel Image" style="width: 100%; height: auto; position: absolute; transition: transform 0.5s ease;">
-        </div>
-        <button id="prevButton">Previous</button>
-        <button id="nextButton">Next</button>
+       <div class="carousel-slide">
+                <div class="placeholder">
+                    <div>
+                        <img src="https://pbs.twimg.com/profile_images/1784929036583530496/EyncUSdh_400x400.jpg" alt="background-color">
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-slide">
+                <div class="placeholder">
+                    <div>
+                        <img src="https://pbs.twimg.com/profile_images/1784929036583530496/EyncUSdh_400x400.jpg" alt="background-color">
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-slide">
+                <div class="placeholder">
+                    <div>
+                        <img src="https://pbs.twimg.com/profile_images/1784929036583530496/EyncUSdh_400x400.jpg" alt="background-color">
+                    </div>
+                </div>
+            </div>
     </div>
 
-    
+    <div style="display: flex; justify-content: center;">
+    <button id="prevButton">Previous</button>
+    <button id="nextButton">Next</button>
+
+    </div>
+
 
     <script src="./index.js"></script>
 </body>

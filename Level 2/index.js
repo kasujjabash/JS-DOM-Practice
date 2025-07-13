@@ -5,6 +5,7 @@ let search = document.getElementById("searchInput");
 let table = document.getElementById("userTable");
 let row = table.getElementsByTagName("tr");
 
+
 // let tableContent = [
 //     { name: "John Doe", age: 30, dateOfBirth: "1993-01-01" },
 //     { name: "Jane Smith", age: 25, dateOfBirth: "1998-05-15" },
