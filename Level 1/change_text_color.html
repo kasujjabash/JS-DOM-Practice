@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Text Color</title>
+    <style>
+      
+    </style>
+
+
+</head>
+<body>
+
+    <!-- 1. Change Text Style -->
+   <div class="container">
+        <h1>Text Style Change</h1>
+     <div class="dropdown">
+        <label for="fontFamily">Font Family</label>
+        <select name="Font Family" id="fontFamily">
+            <option value="Times New Roman, sans-serif" selected >Times New Roman</option>
+            <option value="Poppins, sans-serif">Poppins</option>
+            <option value="Roboto, sans-serif">Roboto</option>
+            <option value="Libertinus Mono, sans-serif">Libertinus Mono</option>
+        </select>
+    </div>
+
+    <div class="dropdown">
+        <label for="fontSize">font Size</label>
+        <select name="font Size" id="fontSize">
+            <option value="12px" selected >12px</option>
+            <option value="16px">16px</option>
+            <option value="20px">20px</option>
+            <option value="24px">24px</option>
+            <option value="28px">28px</option>
+        </select>
+    </div>
+
+     <div class="dropdown">
+        <label for="color">Color</label>
+        <select name="color" id="textColor">
+            <option value="black" selected >Black</option>
+            <option value="Red">Red</option>
+            <option value="Blue">Blue</option>
+            <option value="Green">Green</option>
+
+        </select>
+    </div>
+
+    <div class="text">
+        <p id="paragraph">
+            Create a page on which users can use dropdown menus to change the font size, color, and font family of a text block.
+        </p>
+    </div>
+   </div>
+
+   <!--2. Real-Time Character Counter  -->
+   <div class="text-area-div">
+    <textarea name="Text Area" id="text-area" style="width: 600px; height: 250px;" placeholder="Start Typing....."></textarea>
+    <div class="counter-div">
+        <p style="font-size: 20px;">You have <b><span id="counter">200</span></b> Characters left.</p>
+   </div>
+
+<script src="./index.js"></script>
+</body>
+</html>

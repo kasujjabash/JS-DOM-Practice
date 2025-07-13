@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Level 2</title>
+</head>
+<body>
+
+    <!-- Dynamic List Manager: To do list -->
+    <div class="container">
+        <h1>To Do</h1>
+        <input type="text" placeholder="Add a new task" id="taskInput">
+        <button id="addTaskButton">Add Task</button>
+
+        <p>List of Tasks</p>
+        <ul id="taskList">
+            <!-- <li>Test one    <span><button id="taskEditBtn">Edit</button></span> <button id="taskDeleteBtn">Delete</button></li> -->
+        </ul>
+    </div>
+
+    <!-- Filter Table Rows -->
+    <div class="container" id="tableContainer">
+        <h3>Search bar</h3>
+        <input type="text" id="searchInput" placeholder="Search by name..." style="width: 200px; padding: 5px; margin-bottom: 10px;">
+
+        <table id="userTable" style="width: 50%; border-collapse: collapse; margin-top: 30px;">
+            <thead>
+                <tr style="background-color: #f2f2f2;">
+                    <th id="nameHeader" style="border: 1px solid #ddd; padding: 8px;">Name</th>
+                    <th id="ageHeader" style="border: 1px solid #ddd; padding: 8px;">Age</th>
+                    <th id="dobHeader" style="border: 1px solid #ddd; padding: 8px;">Date of Birth</th>
+                </tr>
+            </thead>
+            <tbody id="taskTableBody">
+                <tr id="row1">
+                    <td id="name1" style="border: 1px solid #ddd; padding: 8px;">John Doe</td>
+                    <td id="age1" style="border: 1px solid #ddd; padding: 8px;">30</td>
+                    <td id="dob1" style="border: 1px solid #ddd; padding: 8px;">1993-01-01</td>
+                </tr>
+                <tr id="row2">
+                    <td id="name2" style="border: 1px solid #ddd; padding: 8px;">Jane Smith</td>
+                    <td id="age2" style="border: 1px solid #ddd; padding: 8px;">25</td>
+                    <td id="dob2" style="border: 1px solid #ddd; padding: 8px;">1998-05-15</td>
+                </tr>
+                <tr id="row3">
+                    <td id="name3" style="border: 1px solid #ddd; padding: 8px;">Emily Johnson</td>
+                    <td id="age3" style="border: 1px solid #ddd; padding: 8px;">22</td>
+                    <td id="dob3" style="border: 1px solid #ddd; padding: 8px;">2001-09-30</td>
+                </tr>
+                <tr id="row4">
+                    <td id="name4" style="border: 1px solid #ddd; padding: 8px;">Michael Brown</td>
+                    <td id="age4" style="border: 1px solid #ddd; padding: 8px;">35</td>
+                    <td id="dob4" style="border: 1px solid #ddd; padding: 8px;">1988-12-20</td>
+                </tr>
+                <tr id="row5">
+                    <td id="name5" style="border: 1px solid #ddd; padding: 8px;">Sarah Davis</td>
+                    <td id="age5" style="border: 1px solid #ddd; padding: 8px;">28</td>
+                    <td id="dob5" style="border: 1px solid #ddd; padding: 8px;">1995-03-10</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- ! Image carousal -->
+    <div class="container" id="carouselContainer">
+        <h3>Image Carousel</h3>
+        <div id="carousel" style="width: 300px; height: 200px; overflow: hidden; position: relative;">
+            <img id="carouselImage" src="https://pbs.twimg.com/profile_images/1784929036583530496/EyncUSdh_400x400.jpg" alt="Carousel Image" style="width: 100%; height: auto; position: absolute; transition: transform 0.5s ease;">
+        </div>
+        <button id="prevButton">Previous</button>
+        <button id="nextButton">Next</button>
+    </div>
+
+    
+
+    <script src="./index.js"></script>
+</body>
+</html>
